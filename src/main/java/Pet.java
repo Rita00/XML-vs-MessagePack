@@ -1,4 +1,5 @@
-import java.util.Date;
+import java.time.LocalDate;
+import java.util.Calendar;
 
 public class Pet {
     private int id;
@@ -6,11 +7,21 @@ public class Pet {
     private String species;
     private String gender;
     private float weight;
-    private Date birth;
+    private LocalDate birth;
     private String description;
 
     private Owner owner;
 
+    public Pet(int id, String name, String species, String gender, float weight, LocalDate birth, String description, Owner owner) {
+        this.id = id;
+        this.name = name;
+        this.species = species;
+        this.gender = gender;
+        this.weight = weight;
+        this.birth = birth;
+        this.description = description;
+        this.owner = owner;
+    }
 
     public int getId() {
         return id;
@@ -52,11 +63,11 @@ public class Pet {
         this.weight = weight;
     }
 
-    public Date getBirth() {
+    public LocalDate getBirth() {
         return birth;
     }
 
-    public void setBirth(Date birth) {
+    public void setBirth(LocalDate birth) {
         this.birth = birth;
     }
 
