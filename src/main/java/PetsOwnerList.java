@@ -30,7 +30,7 @@ public class PetsOwnerList {
         Marshaller mar= context.createMarshaller();
         mar.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, Boolean.TRUE);
 
-        mar.marshal(this, System.out);
+       // mar.marshal(this, System.out);
         mar.marshal(this, new File("./owners.xml"));
     }
 }

@@ -32,7 +32,7 @@ public class Project1 {
             PetsOwnerList allOwners = new PetsOwnerList();
 
             while (linha != null) {
-                System.out.printf("%s\n", linha);
+                //System.out.printf("%s\n", linha);
 
                 ArrayList<Pet> petList = new ArrayList<>();
 
@@ -60,7 +60,14 @@ public class Project1 {
             }
             allOwners.setAllOwners(ownersList);
             arq.close();
+
+            // Medição de tempo em milisegundos
+            long start = System.currentTimeMillis();
             allOwners.marshal();
+            long finish = System.currentTimeMillis();
+            long timeElapsed = finish - start;
+            System.out.println(timeElapsed);
+
         } catch (IOException e) {
             System.err.printf("Erro na abertura do arquivo: %s.\n",
                     e.getMessage());
