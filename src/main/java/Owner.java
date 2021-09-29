@@ -1,16 +1,29 @@
+import jakarta.xml.bind.annotation.XmlAttribute;
+import jakarta.xml.bind.annotation.XmlElement;
+
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.Date;
 
 public class Owner {
+    @XmlAttribute(name = "id")
     private int id;
+
+    @XmlElement(name = "name")
     private String name;
-    private Date birth;
+
+    @XmlElement(name = "birth")
+    private LocalDate birth;
+
+    @XmlElement(name = "phone")
     private long phone;
+
+    @XmlElement(name = "address")
     private String address;
 
     private ArrayList<Pet> petsList;
 
-    public Owner(int id, String name, Date birth, long phone, String address, ArrayList<Pet> petsList) {
+    public Owner(int id, String name, LocalDate birth, long phone, String address, ArrayList<Pet> petsList) {
         this.id = id;
         this.name = name;
         this.birth = birth;
@@ -35,11 +48,11 @@ public class Owner {
         this.name = name;
     }
 
-    public Date getBirth() {
+    public LocalDate getBirth() {
         return birth;
     }
 
-    public void setBirth(Date birth) {
+    public void setBirth(LocalDate birth) {
         this.birth = birth;
     }
 

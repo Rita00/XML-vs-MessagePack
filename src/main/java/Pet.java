@@ -1,16 +1,29 @@
+import jakarta.xml.bind.annotation.XmlAttribute;
+import jakarta.xml.bind.annotation.XmlElement;
+
 import java.time.LocalDate;
-import java.util.Calendar;
 
 public class Pet {
+    @XmlAttribute(name = "id")
     private int id;
-    private String name;
-    private String species;
-    private String gender;
-    private float weight;
-    private LocalDate birth;
-    private String description;
 
-    //private Owner owner;
+    @XmlElement(name = "name")
+    private String name;
+
+    @XmlElement(name = "specie")
+    private String species;
+
+    @XmlElement(name = "gender")
+    private String gender;
+
+    @XmlElement(name = "weight")
+    private float weight;
+
+    @XmlElement(name = "birth")
+    private LocalDate birth;
+
+    @XmlElement(name = "description")
+    private String description;
 
     public Pet(int id, String name, String species, String gender, float weight, LocalDate birth, String description) {
         this.id = id;
@@ -20,7 +33,6 @@ public class Pet {
         this.weight = weight;
         this.birth = birth;
         this.description = description;
-        //this.owner = owner;
     }
 
     public int getId() {
@@ -78,6 +90,4 @@ public class Pet {
     public void setDescription(String description) {
         this.description = description;
     }
-
-
 }
