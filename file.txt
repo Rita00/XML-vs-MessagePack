@@ -1,0 +1,55 @@
+1#Eduardo#2003-09-04#961265245#Avenida Guerra Junqueiro#84+Gina+Papagaio+Masculino+1.40+2020-01-13+Aparenta ter artroses, devido ao envelhecimento?
+2#Antonio#1987-06-18#913682104#Rua Sarmento Pimentel#21+Stella+Porco+Masculino+3.70+2016-06-31+Animal saudavel e que gosta de brincar?
+3#Edson#1976-05-20#963316745#Rua Figueiras#20+Marc+Coelho+Feminino+1.10+2017-05-20+Animal com crescimento normal?
+4#Jonas#2001-12-05#912274876#Rua Padre Joao A. L. Ribeiro#149+Pirata+Chinchila+Masculino+1.40+2020-12-13+Aparenta ter artroses, devido ao envelhecimento?
+5#Rosa#1970-06-31#968983749#Rua Herois Ultramar#106+Da Vinci+Gato+Masculino+1.40+2020-08-20+Animal de porte pequeno?55+Vicente+Porco+Feminino+5.20+2020-09-05+Animal saudavel e que gosta de brincar?
+6#Marcos#1989-10-01#933486949#Rua Cortinhas Fonte#50+Diana+Chinchila+Masculino+1.50+2020-12-13+Pelo macio e suave?97+Singer+Arara+Feminino+1.40+2016-06-31+Pelo macio e suave?
+7#Marcia#1987-06-18#930436624#Rua Sao Domingos#105+Dinho+Pato+Masculino+0.80+2014-10-01+Aparenta ter artroses, devido ao envelhecimento?16+Daphne+Arara+Masculino+3.10+2019-01-23+Pelo macio e suave?
+8#Marcelo#1997-11-25#910635579#Rua Herois Ultramar#142+Gio+Papagaio+Feminino+1.40+2021-04-20+Pelo macio e suave?
+9#Manuel#1989-10-01#965085585#Rua Cortinhas Fonte#53+Bernard+Tartaruga+Masculino+1.10+2015-06-18+Aparenta ter artroses, devido ao envelhecimento?110+Tarzan+Cavalo+Masculino+5.20+2019-09-04+Pelo macio e suave?
+10#Andre#2000-01-12#968699423#Rua Herois Ultramar#131+Shelby+Pato+Masculino+1.40+2016-06-31+Animal saudavel e que gosta de brincar?
+11#Paulo#1986-10-20#960908307#Avenida Boavista#94+Mordecai+Arara+Masculino+1.10+2016-10-20+Animal com crescimento normal?132+Françoise+Canario+Masculino+1.10+2017-05-20+Animal saudavel e que gosta de brincar?
+12#Rodrigo#1987-06-18#918028853#Rua Condes Torre#13+Meghan+Canario+Feminino+1.40+2020-12-13+Animal saudavel e que gosta de brincar?40+Loui+Arara+Masculino+1.10+2020-11-30+Animal com crescimento normal?
+13#Francisca#1976-08-20#960056026#Avenida Guerra Junqueiro#68+Nile+Peixe+Feminino+1.10+2018-12-05+Animal com crescimento normal?
+14#Vera#1989-10-01#926113395#Rua Muro Bacalhoeiros#52+Angelina+Ovelha+Feminino+1.40+2020-11-30+Animal de porte pequeno?
+15#Maria#2000-05-07#910668490#Avenida Guerra Junqueiro#122+Mao+Canario+Masculino+1.10+2018-11-25+Animal com crescimento normal?
+16#Marcio#1976-05-20#918777319#Travessa Choupelo#34+Delta+Ovelha+Feminino+2.10+2015-01-12+Animal de porte pequeno?114+Nancy+Hamster+Masculino+3.10+2021-04-20+Animal saudavel e que gosta de brincar?
+17#Geraldo#1978-05-20#927783539#Rua São Romao#100+Wintour+Arara+Feminino+5.20+2015-01-12+Animal saudavel e que gosta de brincar?
+18#Francisco#1970-06-31#915134235#Rua Sao Salvador#11+Margot+Coelho+Masculino+1.40+2015-06-18+Animal com crescimento normal?102+Homer+Chinchila+Feminino+3.10+2015-06-18+Animal com crescimento normal?
+19#Terezinha#2001-12-05#917622343#Rua Sao Salvador#141+Josh+Arara+Masculino+3.70+2020-01-13+Aparenta ter artroses, devido ao envelhecimento?
+20#Raul#1970-01-13#930107810#Avenida Boavista#38+Saab+Peixe+Masculino+5.20+2020-05-07+Animal com crescimento normal?
+21#Raimundo#1956-11-30#915871175#Rua Condes Torre#32+Dior+Papagaio+Feminino+1.50+2014-10-01+Animal com crescimento normal?
+22#Leandro#1993-01-12#965628082#Rua Sao Domingos#143+Harry+Tartaruga+Feminino+1.40+2015-01-12+Animal com crescimento normal?59+Lex+Cavalo+Feminino+1.50+2015-06-02+Animal de porte pequeno?
+23#Luciana#1970-06-31#919067004#Rua Sarmento Pimentel#3+Dalila+Pato+Feminino+1.10+2020-11-30+Aparenta ter artroses, devido ao envelhecimento?
+24#Mario#2003-09-04#932219861#Rua Sao Salvador#134+Portman+Canario+Feminino+2.10+2021-04-20+Pelo macio e suave?86+Mila+Pato+Masculino+1.10+2019-01-23+Animal saudavel e que gosta de brincar?
+25#Nelson#1999-04-20#938662800#Avenida Paris#57+Flor+Porco+Masculino+1.40+2015-06-18+Animal com crescimento normal?
+26#Raimunda#2001-12-05#921122718#Rua Sarmento Pimentel#89+Koda+Chinchila+Feminino+1.50+2020-01-13+Pelo macio e suave?71+Gucci+Ovelha+Masculino+3.70+2019-01-23+Aparenta ter artroses, devido ao envelhecimento?
+27#Claudio#2002-01-23#934533434#Rua Brigadeiro Lino Valente#12+Fendi+Peixe+Masculino+0.50+2017-05-20+Animal com crescimento normal?79+Cameron+Hamster+Masculino+5.20+2016-10-20+Animal de porte pequeno?
+28#Luiz#2001-12-05#923323123#Rua Padre Joao A. L. Ribeiro#116+Gromit+Arara+Feminino+3.70+2020-08-20+Animal de porte pequeno?56+Dara+Canario+Masculino+0.80+2021-04-20+Animal saudavel e que gosta de brincar?
+29#Pedro#2000-01-12#937765564#Rua Brigadeiro Lino Valente#145+Meredith+Papagaio+Feminino+1.40+2015-06-18+Aparenta ter artroses, devido ao envelhecimento?
+30#Joao#1970-01-13#927512346#Rua Figueiras#25+Maya+Tartaruga+Feminino+2.10+2014-10-01+Pelo macio e suave?
+31#Marta#1970-01-13#933400629#Rua Alto Eira#66+Joy+Porco+Masculino+0.50+2019-09-04+Animal com crescimento normal?139+Buster+Pato+Masculino+0.50+2021-05-20+Animal saudavel e que gosta de brincar?
+32#Benedito#1970-01-13#920356059#Rua Vasco Gama#119+Luna+Cavalo+Feminino+0.80+2021-04-20+Pelo macio e suave?
+33#Jorge#2000-01-12#930082344#Avenida Boavista#36+Dudu+Ovelha+Masculino+0.50+2020-08-20+Animal saudavel e que gosta de brincar?69+Bela+Ovelha+Feminino+1.10+2017-01-13+Pelo macio e suave?
+34#Sonia#1987-06-18#939854678#Rua Miguel Bombarda#108+Guy+Porco+Feminino+2.70+2018-12-05+Aparenta ter artroses, devido ao envelhecimento?130+Thunder+Ovelha+Masculino+1.50+2021-04-20+Animal de porte pequeno?
+35#Antonia#1976-05-20#935302554#Rua Sarmento Pimentel#43+Prenda+Cavalo+Masculino+2.70+2021-04-20+Pelo macio e suave?39+Scooby+Canario+Feminino+5.20+2018-12-05+Aparenta ter artroses, devido ao envelhecimento?
+36#Fernando#1989-10-01#915539083#Rua Sao Salvador#123+Nemo+Coelho+Feminino+2.10+2020-12-13+Pelo macio e suave?
+37#Josefa#1986-10-20#927167727#Rua Sarmento Pimentel#65+Xica+Chinchila+Feminino+1.10+2018-11-25+Animal saudavel e que gosta de brincar?26+Warren+Papagaio+Feminino+2.10+2019-01-23+Aparenta ter artroses, devido ao envelhecimento?
+38#Sebastiao#1970-06-31#912963912#Rua Miguel Bombarda#140+Speed+Gato+Feminino+3.10+2021-04-20+Animal saudavel e que gosta de brincar?136+Norman+Canario+Feminino+0.50+2014-10-01+Animal saudavel e que gosta de brincar?
+39#Carlos#1976-05-20#923992956#Rua Padua Correia#101+Giorgio+Ovelha+Feminino+2.10+2017-01-13+Animal com crescimento normal?
+40#Rafael#1956-11-30#965588746#Avenida Boavista#113+Patty+Cavalo+Feminino+1.10+2019-01-23+Animal com crescimento normal?
+41#Rita#1986-10-20#910342278#Rua Sao Domingos#146+Matilda+Cao+Masculino+2.70+2017-01-13+Animal de porte pequeno?
+42#Patricia#2002-01-23#964047195#Rua Sao Salvador#81+Rob+Porco+Feminino+0.50+2017-05-20+Animal de porte pequeno?91+Sol+Cavalo+Masculino+0.50+2016-10-20+Animal com crescimento normal?
+43#Adriana#1997-11-25#967392875#Rua Vasco Gama#29+Logan+Tartaruga+Masculino+3.70+2014-10-01+Aparenta ter artroses, devido ao envelhecimento?48+Pietro+Cobra+Masculino+1.40+2016-06-31+Animal de porte pequeno?
+44#Filipa#1960-12-13#921844896#Travessa Choupelo#33+Dadinho+Ovelha+Masculino+5.20+2019-01-23+Animal com crescimento normal?72+Claire+Cobra+Masculino+0.80+2018-12-05+Animal saudavel e que gosta de brincar?
+45#Fabio#1970-06-31#924901175#Rua Muro Bacalhoeiros#24+Alice+Tartaruga+Masculino+2.10+2018-12-05+Animal saudavel e que gosta de brincar?
+46#Joana#1956-11-30#915514712#Rua Sarmento Pimentel#67+Luca+Ovelha+Masculino+3.10+2015-06-02+Pelo macio e suave?
+47#Ana#1999-04-20#963300768#Rua Sao Domingos#15+Woody+Arara+Masculino+1.40+2017-05-20+Animal de porte pequeno?
+48#Alexandre#1970-01-13#967453621#Rua Brigadeiro Lino Valente#124+Hilary+Cao+Feminino+0.50+2017-01-13+Pelo macio e suave?
+49#Roberto#1968-09-05#961336669#Rua Condes Torre#121+Elie+Porco+Masculino+1.50+2016-10-20+Pelo macio e suave?
+50#Sergio#2000-05-07#967755314#Avenida Boavista#127+Jack+Pato+Masculino+3.10+2017-05-20+Animal com crescimento normal?95+Stallone+Coelho+Masculino+3.10+2020-08-20+Pelo macio e suave?
+51#Anabela#1968-09-05#919658770#Rua Muro Bacalhoeiros#138+Karl+Tartaruga+Feminino+3.10+2017-01-13+Animal de porte pequeno?135+Dada+Ovelha+Masculino+2.10+2015-01-12+Aparenta ter artroses, devido ao envelhecimento?
+52#Daniel#1970-01-13#937399346#Estrada Abrantes#44+Rambo+Canario+Masculino+5.20+2021-01-12+Animal saudavel e que gosta de brincar?73+Yoda+Ovelha+Feminino+2.70+2016-06-31+Animal com crescimento normal?
+53#Sandra#1997-11-25#931237750#Rua Herois Ultramar#18+Fiona+Peixe+Feminino+1.40+2016-06-31+Animal saudavel e que gosta de brincar?117+Wang+Coelho+Masculino+2.10+2017-01-13+Pelo macio e suave?
+54#Joaquim#2000-01-12#933675324#Rua Padua Correia#88+Versace+Chinchila+Feminino+1.40+2020-11-30+Animal com crescimento normal?
+55#Ricardo#1960-12-13#930699494#Avenida Paris#87+Denis+Porco+Masculino+5.20+2020-12-13+Animal de porte pequeno?103+Mel+Gato+Masculino+2.10+2015-01-12+Animal com crescimento normal?
