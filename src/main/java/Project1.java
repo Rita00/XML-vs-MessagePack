@@ -36,9 +36,7 @@ public class Project1 {
 
                 ArrayList<Pet> petList = new ArrayList<>();
 
-                String owner_caract[] = new String[6];
-
-                owner_caract = linha.split("#");
+                String owner_caract[] = linha.split("#");
                 
                 String list_pets[] = owner_caract[5].split("\\?");
 
@@ -56,7 +54,7 @@ public class Project1 {
                         new SimpleDateFormat("yyyy/MM/dd").parse(owner_caract[2]), Long.parseLong(owner_caract[3]), owner_caract[4], petList);
 
                 ownersList.add(newOwner);
-                System.out.println(newOwner);
+                System.out.println(newOwner.getAddress());
                 linha = lerArq.readLine();
             }
 
