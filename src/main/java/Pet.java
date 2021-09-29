@@ -1,7 +1,10 @@
-import jakarta.xml.bind.annotation.XmlAttribute;
-import jakarta.xml.bind.annotation.XmlElement;
+import jakarta.xml.bind.annotation.*;
+import jakarta.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 
 import java.time.LocalDate;
+
+@XmlAccessorType(XmlAccessType.FIELD)
+@XmlType(propOrder = {"id", "name", "specie", "gender", "weight", "birth", "description"})
 
 public class Pet {
     @XmlAttribute(name = "id")
@@ -11,7 +14,7 @@ public class Pet {
     private String name;
 
     @XmlElement(name = "specie")
-    private String species;
+    private String specie;
 
     @XmlElement(name = "gender")
     private String gender;
@@ -19,16 +22,16 @@ public class Pet {
     @XmlElement(name = "weight")
     private float weight;
 
-    @XmlElement(name = "birth")
+    @XmlJavaTypeAdapter(value = LocalDateXml.class)
     private LocalDate birth;
 
     @XmlElement(name = "description")
     private String description;
 
-    public Pet(int id, String name, String species, String gender, float weight, LocalDate birth, String description) {
+    public Pet(int id, String name, String specie, String gender, float weight, LocalDate birth, String description) {
         this.id = id;
         this.name = name;
-        this.species = species;
+        this.specie = specie;
         this.gender = gender;
         this.weight = weight;
         this.birth = birth;
@@ -51,12 +54,12 @@ public class Pet {
         this.name = name;
     }
 
-    public String getSpecies() {
-        return species;
+    public String getSpecie() {
+        return specie;
     }
 
-    public void setSpecies(String species) {
-        this.species = species;
+    public void setSpecie(String specie) {
+        this.specie = specie;
     }
 
     public String getGender() {

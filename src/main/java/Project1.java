@@ -1,3 +1,5 @@
+import jakarta.xml.bind.JAXBException;
+
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
@@ -27,6 +29,7 @@ public class Project1 {
             String linha = lerArq.readLine();
 
             ArrayList<Owner> ownersList = new ArrayList<>();
+            PetsOwnerList allOwners = new PetsOwnerList();
 
             while (linha != null) {
                 System.out.printf("%s\n", linha);
@@ -50,14 +53,19 @@ public class Project1 {
                 Owner newOwner = new Owner(Integer.parseInt(owner_caract[0]), owner_caract[1],
                         LocalDate.parse(owner_caract[2], DateTimeFormatter.ofPattern("yyyy/MM/dd")), Long.parseLong(owner_caract[3]), owner_caract[4], petList);
 
+                newOwner.setPetsList(petList);
+
                 ownersList.add(newOwner);
-                System.out.println(newOwner.getAddress());
                 linha = lerArq.readLine();
             }
+            allOwners.setAllOwners(ownersList);
             arq.close();
+            allOwners.marshal();
         } catch (IOException e) {
             System.err.printf("Erro na abertura do arquivo: %s.\n",
                     e.getMessage());
+        } catch (JAXBException e) {
+            e.printStackTrace();
         }
     }
 }
