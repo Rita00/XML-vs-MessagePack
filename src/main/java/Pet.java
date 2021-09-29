@@ -10,9 +10,9 @@ public class Pet {
     private LocalDate birth;
     private String description;
 
-    private Owner owner;
+    //private Owner owner;
 
-    public Pet(int id, String name, String species, String gender, float weight, LocalDate birth, String description, Owner owner) {
+    public Pet(int id, String name, String species, String gender, float weight, LocalDate birth, String description) {
         this.id = id;
         this.name = name;
         this.species = species;
@@ -20,7 +20,7 @@ public class Pet {
         this.weight = weight;
         this.birth = birth;
         this.description = description;
-        this.owner = owner;
+        //this.owner = owner;
     }
 
     public int getId() {
@@ -79,11 +79,5 @@ public class Pet {
         this.description = description;
     }
 
-    public Owner getOwner() {
-        return owner;
-    }
 
-    public void setOwner(Owner owner) {
-        this.owner = owner;
-    }
 }

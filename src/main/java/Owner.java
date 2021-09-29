@@ -10,6 +10,15 @@ public class Owner {
 
     private ArrayList<Pet> petsList;
 
+    public Owner(int id, String name, Date birth, long phone, String address, ArrayList<Pet> petsList) {
+        this.id = id;
+        this.name = name;
+        this.birth = birth;
+        this.phone = phone;
+        this.address = address;
+        this.petsList = petsList;
+    }
+
     public int getId() {
         return id;
     }
