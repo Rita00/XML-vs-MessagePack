@@ -1,0 +1,1043 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ListPeople>
+    <owner id="1">
+        <name>Ricardo</name>
+        <birth>1997-11-25</birth>
+        <phone>927783539</phone>
+        <address>Avenida Guerra Junqueiro</address>
+        <petsList>
+            <pet id="39">
+                <name>Gucci</name>
+                <specie>Papagaio</specie>
+                <gender>Masculino</gender>
+                <weight>5.2</weight>
+                <birth>2020-05-07</birth>
+                <description>Animal com crescimento normal</description>
+            </pet>
+        </petsList>
+    </owner>
+    <owner id="2">
+        <name>Nelson</name>
+        <birth>1989-10-01</birth>
+        <phone>965085585</phone>
+        <address>Travessa Choupelo</address>
+        <petsList>
+            <pet id="100">
+                <name>Nemo</name>
+                <specie>Arara</specie>
+                <gender>Feminino</gender>
+                <weight>0.5</weight>
+                <birth>2017-05-20</birth>
+                <description>Aparenta ter artroses, devido ao envelhecimento</description>
+            </pet>
+        </petsList>
+    </owner>
+    <owner id="3">
+        <name>Sebastiao</name>
+        <birth>1978-06-02</birth>
+        <phone>915871175</phone>
+        <address>Rua Muro Bacalhoeiros</address>
+        <petsList>
+            <pet id="15">
+                <name>Bonnie</name>
+                <specie>Chinchila</specie>
+                <gender>Feminino</gender>
+                <weight>1.1</weight>
+                <birth>2018-12-05</birth>
+                <description>Animal saudavel e que gosta de brincar</description>
+            </pet>
+        </petsList>
+    </owner>
+    <owner id="4">
+        <name>Manuel</name>
+        <birth>2003-09-04</birth>
+        <phone>933486949</phone>
+        <address>Rua Brigadeiro Lino Valente</address>
+        <petsList>
+            <pet id="149">
+                <name>Dakota</name>
+                <specie>Pato</specie>
+                <gender>Feminino</gender>
+                <weight>0.8</weight>
+                <birth>2021-01-12</birth>
+                <description>Animal saudavel e que gosta de brincar</description>
+            </pet>
+            <pet id="70">
+                <name>Thunder</name>
+                <specie>Gato</specie>
+                <gender>Feminino</gender>
+                <weight>3.7</weight>
+                <birth>2014-10-01</birth>
+                <description>Animal de porte pequeno</description>
+            </pet>
+        </petsList>
+    </owner>
+    <owner id="5">
+        <name>Daniel</name>
+        <birth>1968-09-05</birth>
+        <phone>965588746</phone>
+        <address>Rua Muro Bacalhoeiros</address>
+        <petsList>
+            <pet id="80">
+                <name>Caleb</name>
+                <specie>Canario</specie>
+                <gender>Feminino</gender>
+                <weight>3.7</weight>
+                <birth>2021-04-20</birth>
+                <description>Pelo macio e suave</description>
+            </pet>
+            <pet id="127">
+                <name>Koda</name>
+                <specie>Hamster</specie>
+                <gender>Masculino</gender>
+                <weight>1.5</weight>
+                <birth>2020-01-13</birth>
+                <description>Animal saudavel e que gosta de brincar</description>
+            </pet>
+        </petsList>
+    </owner>
+    <owner id="6">
+        <name>Edson</name>
+        <birth>1976-05-20</birth>
+        <phone>921122718</phone>
+        <address>Rua Condes Torre</address>
+        <petsList>
+            <pet id="43">
+                <name>Guy</name>
+                <specie>Cao</specie>
+                <gender>Masculino</gender>
+                <weight>0.5</weight>
+                <birth>2016-06-30</birth>
+                <description>Aparenta ter artroses, devido ao envelhecimento</description>
+            </pet>
+            <pet id="16">
+                <name>Saab</name>
+                <specie>Gato</specie>
+                <gender>Feminino</gender>
+                <weight>0.8</weight>
+                <birth>2017-01-13</birth>
+                <description>Animal de porte pequeno</description>
+            </pet>
+        </petsList>
+    </owner>
+    <owner id="7">
+        <name>Sergio</name>
+        <birth>1976-05-20</birth>
+        <phone>923323123</phone>
+        <address>Rua Vasco Gama</address>
+        <petsList>
+            <pet id="64">
+                <name>Dexter</name>
+                <specie>Canario</specie>
+                <gender>Feminino</gender>
+                <weight>2.7</weight>
+                <birth>2018-11-25</birth>
+                <description>Aparenta ter artroses, devido ao envelhecimento</description>
+            </pet>
+        </petsList>
+    </owner>
+    <owner id="8">
+        <name>Sonia</name>
+        <birth>2001-12-05</birth>
+        <phone>937399346</phone>
+        <address>Rua Alto Eira</address>
+        <petsList>
+            <pet id="21">
+                <name>Monet</name>
+                <specie>Hamster</specie>
+                <gender>Masculino</gender>
+                <weight>1.5</weight>
+                <birth>2015-06-02</birth>
+                <description>Animal de porte pequeno</description>
+            </pet>
+        </petsList>
+    </owner>
+    <owner id="9">
+        <name>Joaquim</name>
+        <birth>1989-10-01</birth>
+        <phone>965628082</phone>
+        <address>Rua Muro Bacalhoeiros</address>
+        <petsList>
+            <pet id="78">
+                <name>Cameron</name>
+                <specie>Peixe</specie>
+                <gender>Feminino</gender>
+                <weight>2.1</weight>
+                <birth>2017-05-20</birth>
+                <description>Pelo macio e suave</description>
+            </pet>
+        </petsList>
+    </owner>
+    <owner id="10">
+        <name>Jonas</name>
+        <birth>1978-06-02</birth>
+        <phone>923992956</phone>
+        <address>Rua Brigadeiro Lino Valente</address>
+        <petsList>
+            <pet id="133">
+                <name>Angelina</name>
+                <specie>Arara</specie>
+                <gender>Masculino</gender>
+                <weight>3.7</weight>
+                <birth>2019-09-04</birth>
+                <description>Animal saudavel e que gosta de brincar</description>
+            </pet>
+            <pet id="48">
+                <name>Prenda</name>
+                <specie>Gato</specie>
+                <gender>Masculino</gender>
+                <weight>1.1</weight>
+                <birth>2020-08-20</birth>
+                <description>Animal saudavel e que gosta de brincar</description>
+            </pet>
+        </petsList>
+    </owner>
+    <owner id="11">
+        <name>Maria</name>
+        <birth>1999-04-20</birth>
+        <phone>920356059</phone>
+        <address>Rua Sarmento Pimentel</address>
+        <petsList>
+            <pet id="95">
+                <name>Charles</name>
+                <specie>Ovelha</specie>
+                <gender>Feminino</gender>
+                <weight>1.5</weight>
+                <birth>2015-06-02</birth>
+                <description>Pelo macio e suave</description>
+            </pet>
+            <pet id="60">
+                <name>Ash</name>
+                <specie>Cao</specie>
+                <gender>Feminino</gender>
+                <weight>1.4</weight>
+                <birth>2016-10-20</birth>
+                <description>Aparenta ter artroses, devido ao envelhecimento</description>
+            </pet>
+        </petsList>
+    </owner>
+    <owner id="12">
+        <name>Ana</name>
+        <birth>1970-01-13</birth>
+        <phone>926113395</phone>
+        <address>Rua Sao Domingos</address>
+        <petsList>
+            <pet id="30">
+                <name>Buster</name>
+                <specie>Tartaruga</specie>
+                <gender>Feminino</gender>
+                <weight>2.7</weight>
+                <birth>2014-10-01</birth>
+                <description>Pelo macio e suave</description>
+            </pet>
+            <pet id="147">
+                <name>Joy</name>
+                <specie>Chinchila</specie>
+                <gender>Masculino</gender>
+                <weight>5.2</weight>
+                <birth>2020-05-07</birth>
+                <description>Pelo macio e suave</description>
+            </pet>
+        </petsList>
+    </owner>
+    <owner id="13">
+        <name>Fabio</name>
+        <birth>1968-09-05</birth>
+        <phone>918028853</phone>
+        <address>Rua Padre Joao A. L. Ribeiro</address>
+        <petsList>
+            <pet id="27">
+                <name>Merlin</name>
+                <specie>Chinchila</specie>
+                <gender>Feminino</gender>
+                <weight>0.8</weight>
+                <birth>2014-10-01</birth>
+                <description>Aparenta ter artroses, devido ao envelhecimento</description>
+            </pet>
+        </petsList>
+    </owner>
+    <owner id="14">
+        <name>Pedro</name>
+        <birth>1976-05-20</birth>
+        <phone>963300768</phone>
+        <address>Rua Herois Ultramar</address>
+        <petsList>
+            <pet id="139">
+                <name>Matilde</name>
+                <specie>Tartaruga</specie>
+                <gender>Masculino</gender>
+                <weight>3.7</weight>
+                <birth>2019-09-04</birth>
+                <description>Animal com crescimento normal</description>
+            </pet>
+        </petsList>
+    </owner>
+    <owner id="15">
+        <name>Marcos</name>
+        <birth>1989-10-01</birth>
+        <phone>915539083</phone>
+        <address>Avenida Guerra Junqueiro</address>
+        <petsList>
+            <pet id="129">
+                <name>Ballmer</name>
+                <specie>Cobra</specie>
+                <gender>Masculino</gender>
+                <weight>2.1</weight>
+                <birth>2015-06-02</birth>
+                <description>Animal com crescimento normal</description>
+            </pet>
+        </petsList>
+    </owner>
+    <owner id="16">
+        <name>Francisca</name>
+        <birth>2000-05-07</birth>
+        <phone>967392875</phone>
+        <address>Rua Sarmento Pimentel</address>
+        <petsList>
+            <pet id="9">
+                <name>Minnie</name>
+                <specie>Hamster</specie>
+                <gender>Masculino</gender>
+                <weight>1.4</weight>
+                <birth>2021-04-20</birth>
+                <description>Aparenta ter artroses, devido ao envelhecimento</description>
+            </pet>
+            <pet id="108">
+                <name>Will</name>
+                <specie>Peixe</specie>
+                <gender>Masculino</gender>
+                <weight>1.5</weight>
+                <birth>2019-09-04</birth>
+                <description>Animal de porte pequeno</description>
+            </pet>
+        </petsList>
+    </owner>
+    <owner id="17">
+        <name>Luiz</name>
+        <birth>2000-05-07</birth>
+        <phone>919658770</phone>
+        <address>Rua Alto Eira</address>
+        <petsList>
+            <pet id="101">
+                <name>Fluffy</name>
+                <specie>Ovelha</specie>
+                <gender>Masculino</gender>
+                <weight>0.5</weight>
+                <birth>2015-06-18</birth>
+                <description>Animal saudavel e que gosta de brincar</description>
+            </pet>
+        </petsList>
+    </owner>
+    <owner id="18">
+        <name>Andre</name>
+        <birth>1960-12-13</birth>
+        <phone>967453621</phone>
+        <address>Estrada Abrantes</address>
+        <petsList>
+            <pet id="10">
+                <name>Mittens</name>
+                <specie>Cavalo</specie>
+                <gender>Feminino</gender>
+                <weight>0.5</weight>
+                <birth>2015-06-02</birth>
+                <description>Aparenta ter artroses, devido ao envelhecimento</description>
+            </pet>
+        </petsList>
+    </owner>
+    <owner id="19">
+        <name>Rafael</name>
+        <birth>1999-04-20</birth>
+        <phone>939854678</phone>
+        <address>Rua Figueiras</address>
+        <petsList>
+            <pet id="106">
+                <name>Mila</name>
+                <specie>Cao</specie>
+                <gender>Feminino</gender>
+                <weight>3.7</weight>
+                <birth>2017-05-20</birth>
+                <description>Animal de porte pequeno</description>
+            </pet>
+        </petsList>
+    </owner>
+    <owner id="20">
+        <name>Sandra</name>
+        <birth>1956-11-30</birth>
+        <phone>924901175</phone>
+        <address>Avenida Paris</address>
+        <petsList>
+            <pet id="7">
+                <name>Luca</name>
+                <specie>Peixe</specie>
+                <gender>Feminino</gender>
+                <weight>2.1</weight>
+                <birth>2017-05-20</birth>
+                <description>Pelo macio e suave</description>
+            </pet>
+        </petsList>
+    </owner>
+    <owner id="21">
+        <name>Luciana</name>
+        <birth>1976-08-20</birth>
+        <phone>927167727</phone>
+        <address>Rua Brigadeiro Lino Valente</address>
+        <petsList>
+            <pet id="55">
+                <name>Tony</name>
+                <specie>Gato</specie>
+                <gender>Feminino</gender>
+                <weight>1.1</weight>
+                <birth>2015-01-12</birth>
+                <description>Animal com crescimento normal</description>
+            </pet>
+        </petsList>
+    </owner>
+    <owner id="22">
+        <name>Josefa</name>
+        <birth>2003-09-04</birth>
+        <phone>910635579</phone>
+        <address>Rua Sao Domingos</address>
+        <petsList>
+            <pet id="84">
+                <name>Sid</name>
+                <specie>Chinchila</specie>
+                <gender>Feminino</gender>
+                <weight>0.8</weight>
+                <birth>2020-11-30</birth>
+                <description>Pelo macio e suave</description>
+            </pet>
+        </petsList>
+    </owner>
+    <owner id="23">
+        <name>Raul</name>
+        <birth>1999-04-20</birth>
+        <phone>913682104</phone>
+        <address>Rua Muro Bacalhoeiros</address>
+        <petsList>
+            <pet id="5">
+                <name>Claire</name>
+                <specie>Cavalo</specie>
+                <gender>Feminino</gender>
+                <weight>5.2</weight>
+                <birth>2020-11-30</birth>
+                <description>Animal de porte pequeno</description>
+            </pet>
+        </petsList>
+    </owner>
+    <owner id="24">
+        <name>Carlos</name>
+        <birth>1997-11-25</birth>
+        <phone>938662800</phone>
+        <address>Rua Padre Joao A. L. Ribeiro</address>
+        <petsList>
+            <pet id="99">
+                <name>Dior</name>
+                <specie>Papagaio</specie>
+                <gender>Masculino</gender>
+                <weight>0.5</weight>
+                <birth>2020-11-30</birth>
+                <description>Animal de porte pequeno</description>
+            </pet>
+        </petsList>
+    </owner>
+    <owner id="25">
+        <name>Marcia</name>
+        <birth>1960-12-13</birth>
+        <phone>961265245</phone>
+        <address>Rua Miguel Bombarda</address>
+        <petsList>
+            <pet id="34">
+                <name>Lex</name>
+                <specie>Peixe</specie>
+                <gender>Feminino</gender>
+                <weight>1.1</weight>
+                <birth>2020-11-30</birth>
+                <description>Animal com crescimento normal</description>
+            </pet>
+        </petsList>
+    </owner>
+    <owner id="26">
+        <name>Joana</name>
+        <birth>1960-12-13</birth>
+        <phone>933675324</phone>
+        <address>Rua Sarmento Pimentel</address>
+        <petsList>
+            <pet id="35">
+                <name>Loui</name>
+                <specie>Ovelha</specie>
+                <gender>Masculino</gender>
+                <weight>2.7</weight>
+                <birth>2020-09-05</birth>
+                <description>Animal de porte pequeno</description>
+            </pet>
+            <pet id="77">
+                <name>Fendi</name>
+                <specie>Canario</specie>
+                <gender>Masculino</gender>
+                <weight>1.5</weight>
+                <birth>2020-12-13</birth>
+                <description>Animal com crescimento normal</description>
+            </pet>
+        </petsList>
+    </owner>
+    <owner id="27">
+        <name>Antonia</name>
+        <birth>1970-01-13</birth>
+        <phone>931237750</phone>
+        <address>Rua Padua Correia</address>
+        <petsList>
+            <pet id="121">
+                <name>Marshall</name>
+                <specie>Gato</specie>
+                <gender>Masculino</gender>
+                <weight>0.5</weight>
+                <birth>2020-11-30</birth>
+                <description>Animal com crescimento normal</description>
+            </pet>
+        </petsList>
+    </owner>
+    <owner id="28">
+        <name>Eduardo</name>
+        <birth>1970-06-30</birth>
+        <phone>930699494</phone>
+        <address>Rua Miguel Bombarda</address>
+        <petsList>
+            <pet id="8">
+                <name>Xica</name>
+                <specie>Papagaio</specie>
+                <gender>Masculino</gender>
+                <weight>2.7</weight>
+                <birth>2021-04-20</birth>
+                <description>Animal de porte pequeno</description>
+            </pet>
+        </petsList>
+    </owner>
+    <owner id="29">
+        <name>Anabela</name>
+        <birth>1960-12-13</birth>
+        <phone>930107810</phone>
+        <address>Rua Miguel Bombarda</address>
+        <petsList>
+            <pet id="118">
+                <name>Norman</name>
+                <specie>Ovelha</specie>
+                <gender>Feminino</gender>
+                <weight>3.7</weight>
+                <birth>2018-12-05</birth>
+                <description>Aparenta ter artroses, devido ao envelhecimento</description>
+            </pet>
+            <pet id="111">
+                <name>Hermione</name>
+                <specie>Pato</specie>
+                <gender>Feminino</gender>
+                <weight>0.8</weight>
+                <birth>2020-08-20</birth>
+                <description>Aparenta ter artroses, devido ao envelhecimento</description>
+            </pet>
+        </petsList>
+    </owner>
+    <owner id="30">
+        <name>Vera</name>
+        <birth>1956-11-30</birth>
+        <phone>921844896</phone>
+        <address>Avenida Guerra Junqueiro</address>
+        <petsList>
+            <pet id="96">
+                <name>Lily</name>
+                <specie>Chinchila</specie>
+                <gender>Feminino</gender>
+                <weight>2.7</weight>
+                <birth>2014-10-01</birth>
+                <description>Animal de porte pequeno</description>
+            </pet>
+        </petsList>
+    </owner>
+    <owner id="31">
+        <name>Rita</name>
+        <birth>1999-04-20</birth>
+        <phone>934533434</phone>
+        <address>Rua Padua Correia</address>
+        <petsList>
+            <pet id="50">
+                <name>Hilary</name>
+                <specie>Ovelha</specie>
+                <gender>Masculino</gender>
+                <weight>0.8</weight>
+                <birth>2019-01-23</birth>
+                <description>Animal com crescimento normal</description>
+            </pet>
+        </petsList>
+    </owner>
+    <owner id="32">
+        <name>Claudio</name>
+        <birth>2001-12-05</birth>
+        <phone>933400629</phone>
+        <address>Rua Vasco Gama</address>
+        <petsList>
+            <pet id="114">
+                <name>Denis</name>
+                <specie>Chinchila</specie>
+                <gender>Masculino</gender>
+                <weight>0.8</weight>
+                <birth>2016-06-30</birth>
+                <description>Animal de porte pequeno</description>
+            </pet>
+        </petsList>
+    </owner>
+    <owner id="33">
+        <name>Geraldo</name>
+        <birth>1987-06-18</birth>
+        <phone>967755314</phone>
+        <address>Rua S�o Romao</address>
+        <petsList>
+            <pet id="94">
+                <name>Mordecai</name>
+                <specie>Cao</specie>
+                <gender>Masculino</gender>
+                <weight>1.1</weight>
+                <birth>2018-12-05</birth>
+                <description>Animal saudavel e que gosta de brincar</description>
+            </pet>
+            <pet id="37">
+                <name>Flor</name>
+                <specie>Ovelha</specie>
+                <gender>Masculino</gender>
+                <weight>0.5</weight>
+                <birth>2019-09-04</birth>
+                <description>Animal de porte pequeno</description>
+            </pet>
+        </petsList>
+    </owner>
+    <owner id="34">
+        <name>Antonio</name>
+        <birth>2003-09-04</birth>
+        <phone>930082344</phone>
+        <address>Rua Muro Bacalhoeiros</address>
+        <petsList>
+            <pet id="120">
+                <name>Wang</name>
+                <specie>Hamster</specie>
+                <gender>Feminino</gender>
+                <weight>5.2</weight>
+                <birth>2014-10-01</birth>
+                <description>Pelo macio e suave</description>
+            </pet>
+            <pet id="72">
+                <name>Elie</name>
+                <specie>Pato</specie>
+                <gender>Feminino</gender>
+                <weight>1.4</weight>
+                <birth>2020-09-05</birth>
+                <description>Aparenta ter artroses, devido ao envelhecimento</description>
+            </pet>
+        </petsList>
+    </owner>
+    <owner id="35">
+        <name>Marcio</name>
+        <birth>1986-10-20</birth>
+        <phone>934564564</phone>
+        <address>Rua Vasco Gama</address>
+        <petsList>
+            <pet id="116">
+                <name>Dolores</name>
+                <specie>Cavalo</specie>
+                <gender>Masculino</gender>
+                <weight>1.4</weight>
+                <birth>2016-10-20</birth>
+                <description>Animal com crescimento normal</description>
+            </pet>
+        </petsList>
+    </owner>
+    <owner id="36">
+        <name>Joao</name>
+        <birth>2000-01-12</birth>
+        <phone>912963912</phone>
+        <address>Rua Alto Eira</address>
+        <petsList>
+            <pet id="150">
+                <name>Pucci</name>
+                <specie>Canario</specie>
+                <gender>Masculino</gender>
+                <weight>2.1</weight>
+                <birth>2017-05-20</birth>
+                <description>Animal saudavel e que gosta de brincar</description>
+            </pet>
+            <pet id="93">
+                <name>Logan</name>
+                <specie>Papagaio</specie>
+                <gender>Masculino</gender>
+                <weight>2.7</weight>
+                <birth>2021-04-20</birth>
+                <description>Aparenta ter artroses, devido ao envelhecimento</description>
+            </pet>
+        </petsList>
+    </owner>
+    <owner id="37">
+        <name>Leandro</name>
+        <birth>1993-01-12</birth>
+        <phone>927512346</phone>
+        <address>Rua Muro Bacalhoeiros</address>
+        <petsList>
+            <pet id="25">
+                <name>Gustaf</name>
+                <specie>Canario</specie>
+                <gender>Masculino</gender>
+                <weight>5.2</weight>
+                <birth>2018-11-25</birth>
+                <description>Pelo macio e suave</description>
+            </pet>
+            <pet id="138">
+                <name>Bela</name>
+                <specie>Cavalo</specie>
+                <gender>Masculino</gender>
+                <weight>5.2</weight>
+                <birth>2020-01-13</birth>
+                <description>Animal saudavel e que gosta de brincar</description>
+            </pet>
+        </petsList>
+    </owner>
+    <owner id="38">
+        <name>Terezinha</name>
+        <birth>1970-01-13</birth>
+        <phone>964047195</phone>
+        <address>Rua Padre Joao A. L. Ribeiro</address>
+        <petsList>
+            <pet id="45">
+                <name>Hulk</name>
+                <specie>Cavalo</specie>
+                <gender>Masculino</gender>
+                <weight>0.8</weight>
+                <birth>2017-01-13</birth>
+                <description>Animal de porte pequeno</description>
+            </pet>
+        </petsList>
+    </owner>
+    <owner id="39">
+        <name>Rosa</name>
+        <birth>2001-12-05</birth>
+        <phone>960056026</phone>
+        <address>Rua Padua Correia</address>
+        <petsList>
+            <pet id="134">
+                <name>Bernard</name>
+                <specie>Cobra</specie>
+                <gender>Feminino</gender>
+                <weight>2.1</weight>
+                <birth>2019-01-23</birth>
+                <description>Animal de porte pequeno</description>
+            </pet>
+            <pet id="137">
+                <name>Wintour</name>
+                <specie>Cavalo</specie>
+                <gender>Masculino</gender>
+                <weight>0.5</weight>
+                <birth>2015-06-18</birth>
+                <description>Aparenta ter artroses, devido ao envelhecimento</description>
+            </pet>
+        </petsList>
+    </owner>
+    <owner id="40">
+        <name>Patricia</name>
+        <birth>2000-05-07</birth>
+        <phone>960908307</phone>
+        <address>Rua Sarmento Pimentel</address>
+        <petsList>
+            <pet id="59">
+                <name>Karl</name>
+                <specie>Cobra</specie>
+                <gender>Masculino</gender>
+                <weight>3.7</weight>
+                <birth>2018-12-05</birth>
+                <description>Animal com crescimento normal</description>
+            </pet>
+        </petsList>
+    </owner>
+    <owner id="41">
+        <name>Jose</name>
+        <birth>1989-10-01</birth>
+        <phone>930436624</phone>
+        <address>Avenida Boavista</address>
+        <petsList>
+            <pet id="19">
+                <name>Stefan</name>
+                <specie>Tartaruga</specie>
+                <gender>Masculino</gender>
+                <weight>1.5</weight>
+                <birth>2016-10-20</birth>
+                <description>Aparenta ter artroses, devido ao envelhecimento</description>
+            </pet>
+        </petsList>
+    </owner>
+    <owner id="42">
+        <name>Marta</name>
+        <birth>1970-01-13</birth>
+        <phone>932219861</phone>
+        <address>Rua Vasco Gama</address>
+        <petsList>
+            <pet id="113">
+                <name>Mafalda</name>
+                <specie>Hamster</specie>
+                <gender>Masculino</gender>
+                <weight>1.1</weight>
+                <birth>2020-11-30</birth>
+                <description>Animal de porte pequeno</description>
+            </pet>
+            <pet id="82">
+                <name>Ariel</name>
+                <specie>Porco</specie>
+                <gender>Masculino</gender>
+                <weight>1.1</weight>
+                <birth>2021-05-20</birth>
+                <description>Animal saudavel e que gosta de brincar</description>
+            </pet>
+        </petsList>
+    </owner>
+    <owner id="43">
+        <name>Filipa</name>
+        <birth>2002-01-23</birth>
+        <phone>910668490</phone>
+        <address>Rua Herois Ultramar</address>
+        <petsList>
+            <pet id="66">
+                <name>Versace</name>
+                <specie>Arara</specie>
+                <gender>Masculino</gender>
+                <weight>1.4</weight>
+                <birth>2020-11-30</birth>
+                <description>Animal com crescimento normal</description>
+            </pet>
+        </petsList>
+    </owner>
+    <owner id="44">
+        <name>Roberto</name>
+        <birth>1976-08-20</birth>
+        <phone>915514712</phone>
+        <address>Rua Condes Torre</address>
+        <petsList>
+            <pet id="103">
+                <name>Westwood</name>
+                <specie>Tartaruga</specie>
+                <gender>Feminino</gender>
+                <weight>1.4</weight>
+                <birth>2019-09-04</birth>
+                <description>Animal com crescimento normal</description>
+            </pet>
+        </petsList>
+    </owner>
+    <owner id="45">
+        <name>Raimunda</name>
+        <birth>1956-11-30</birth>
+        <phone>910342278</phone>
+        <address>Rua Miguel Bombarda</address>
+        <petsList>
+            <pet id="102">
+                <name>Dara</name>
+                <specie>Pato</specie>
+                <gender>Feminino</gender>
+                <weight>5.2</weight>
+                <birth>2021-05-20</birth>
+                <description>Pelo macio e suave</description>
+            </pet>
+        </petsList>
+    </owner>
+    <owner id="46">
+        <name>Francisco</name>
+        <birth>1976-05-20</birth>
+        <phone>937765564</phone>
+        <address>Travessa Choupelo</address>
+        <petsList>
+            <pet id="62">
+                <name>Cartier</name>
+                <specie>Cobra</specie>
+                <gender>Masculino</gender>
+                <weight>1.4</weight>
+                <birth>2018-12-05</birth>
+                <description>Animal com crescimento normal</description>
+            </pet>
+            <pet id="131">
+                <name>Amora</name>
+                <specie>Chinchila</specie>
+                <gender>Feminino</gender>
+                <weight>3.1</weight>
+                <birth>2015-06-02</birth>
+                <description>Aparenta ter artroses, devido ao envelhecimento</description>
+            </pet>
+        </petsList>
+    </owner>
+    <owner id="47">
+        <name>Raimundo</name>
+        <birth>1978-05-20</birth>
+        <phone>961336669</phone>
+        <address>Rua Sao Salvador</address>
+        <petsList>
+            <pet id="97">
+                <name>Celine</name>
+                <specie>Cao</specie>
+                <gender>Feminino</gender>
+                <weight>3.7</weight>
+                <birth>2020-11-30</birth>
+                <description>Animal com crescimento normal</description>
+            </pet>
+            <pet id="18">
+                <name>Rosita</name>
+                <specie>Coelho</specie>
+                <gender>Feminino</gender>
+                <weight>3.7</weight>
+                <birth>2015-06-02</birth>
+                <description>Pelo macio e suave</description>
+            </pet>
+        </petsList>
+    </owner>
+    <owner id="48">
+        <name>Rodrigo</name>
+        <birth>1970-06-30</birth>
+        <phone>968699423</phone>
+        <address>Rua Muro Bacalhoeiros</address>
+        <petsList>
+            <pet id="126">
+                <name>Troy</name>
+                <specie>Cao</specie>
+                <gender>Masculino</gender>
+                <weight>5.2</weight>
+                <birth>2021-05-20</birth>
+                <description>Animal com crescimento normal</description>
+            </pet>
+        </petsList>
+    </owner>
+    <owner id="49">
+        <name>Adriana</name>
+        <birth>1968-09-05</birth>
+        <phone>963316745</phone>
+        <address>Rua Muro Bacalhoeiros</address>
+        <petsList>
+            <pet id="144">
+                <name>Darryl</name>
+                <specie>Cao</specie>
+                <gender>Masculino</gender>
+                <weight>0.5</weight>
+                <birth>2016-10-20</birth>
+                <description>Pelo macio e suave</description>
+            </pet>
+        </petsList>
+    </owner>
+    <owner id="50">
+        <name>Jorge</name>
+        <birth>1987-06-18</birth>
+        <phone>968983749</phone>
+        <address>Avenida Boavista</address>
+        <petsList>
+            <pet id="12">
+                <name>Mel</name>
+                <specie>Chinchila</specie>
+                <gender>Masculino</gender>
+                <weight>5.2</weight>
+                <birth>2021-05-20</birth>
+                <description>Animal de porte pequeno</description>
+            </pet>
+        </petsList>
+    </owner>
+    <owner id="51">
+        <name>Fernando</name>
+        <birth>1993-01-12</birth>
+        <phone>917622343</phone>
+        <address>Avenida Paris</address>
+        <petsList>
+            <pet id="136">
+                <name>Samurai</name>
+                <specie>Chinchila</specie>
+                <gender>Masculino</gender>
+                <weight>5.2</weight>
+                <birth>2020-09-05</birth>
+                <description>Animal saudavel e que gosta de brincar</description>
+            </pet>
+        </petsList>
+    </owner>
+    <owner id="52">
+        <name>Paulo</name>
+        <birth>2000-05-07</birth>
+        <phone>918777319</phone>
+        <address>Rua Sao Salvador</address>
+        <petsList>
+            <pet id="104">
+                <name>Scooby</name>
+                <specie>Cao</specie>
+                <gender>Feminino</gender>
+                <weight>3.7</weight>
+                <birth>2019-01-23</birth>
+                <description>Animal saudavel e que gosta de brincar</description>
+            </pet>
+            <pet id="20">
+                <name>Bambi</name>
+                <specie>Tartaruga</specie>
+                <gender>Masculino</gender>
+                <weight>2.7</weight>
+                <birth>2015-06-02</birth>
+                <description>Animal de porte pequeno</description>
+            </pet>
+        </petsList>
+    </owner>
+    <owner id="53">
+        <name>Mario</name>
+        <birth>1970-01-13</birth>
+        <phone>915134235</phone>
+        <address>Rua Cortinhas Fonte</address>
+        <petsList>
+            <pet id="6">
+                <name>Gina</name>
+                <specie>Peixe</specie>
+                <gender>Feminino</gender>
+                <weight>0.5</weight>
+                <birth>2020-09-05</birth>
+                <description>Animal saudavel e que gosta de brincar</description>
+            </pet>
+            <pet id="40">
+                <name>Natasha</name>
+                <specie>Chinchila</specie>
+                <gender>Feminino</gender>
+                <weight>3.7</weight>
+                <birth>2018-11-25</birth>
+                <description>Animal saudavel e que gosta de brincar</description>
+            </pet>
+        </petsList>
+    </owner>
+    <owner id="54">
+        <name>Marcelo</name>
+        <birth>1976-05-20</birth>
+        <phone>935302554</phone>
+        <address>Rua Herois Ultramar</address>
+        <petsList>
+            <pet id="81">
+                <name>Marc</name>
+                <specie>Peixe</specie>
+                <gender>Masculino</gender>
+                <weight>3.7</weight>
+                <birth>2020-12-13</birth>
+                <description>Animal de porte pequeno</description>
+            </pet>
+            <pet id="98">
+                <name>Fenty</name>
+                <specie>Papagaio</specie>
+                <gender>Feminino</gender>
+                <weight>1.1</weight>
+                <birth>2018-11-25</birth>
+                <description>Animal de porte pequeno</description>
+            </pet>
+        </petsList>
+    </owner>
+    <owner id="55">
+        <name>Alexandre</name>
+        <birth>2000-05-07</birth>
+        <phone>919067004</phone>
+        <address>Rua Padre Joao A. L. Ribeiro</address>
+        <petsList>
+            <pet id="47">
+                <name>Stitch</name>
+                <specie>Coelho</specie>
+                <gender>Feminino</gender>
+                <weight>1.4</weight>
+                <birth>2021-04-20</birth>
+                <description>Pelo macio e suave</description>
+            </pet>
+        </petsList>
+    </owner>
+</ListPeople>

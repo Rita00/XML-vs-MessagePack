@@ -1,9 +1,11 @@
-import jakarta.xml.bind.annotation.XmlAttribute;
-import jakarta.xml.bind.annotation.XmlElement;
+import jakarta.xml.bind.annotation.*;
+import jakarta.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
-import java.util.Date;
+
+@XmlAccessorType(XmlAccessType.FIELD)
+@XmlType(propOrder = {"id", "name", "birth", "phone", "address", "petsList"})
 
 public class Owner {
     @XmlAttribute(name = "id")
@@ -12,7 +14,8 @@ public class Owner {
     @XmlElement(name = "name")
     private String name;
 
-    @XmlElement(name = "birth")
+
+    @XmlJavaTypeAdapter(value = LocalDateXml.class)
     private LocalDate birth;
 
     @XmlElement(name = "phone")
@@ -21,6 +24,8 @@ public class Owner {
     @XmlElement(name = "address")
     private String address;
 
+    @XmlElementWrapper(name = "petsList")
+    @XmlElement(name = "pet")
     private ArrayList<Pet> petsList;
 
     public Owner(int id, String name, LocalDate birth, long phone, String address, ArrayList<Pet> petsList) {
