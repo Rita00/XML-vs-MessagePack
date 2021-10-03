@@ -49,22 +49,23 @@ public class Project1 {
 
             long start = System.currentTimeMillis();
             allOwners.marshal();
+            allOwners = PetsOwnerList.unmarshal();
 
             long finish = System.currentTimeMillis();
             long timeElapsed = finish - start;
-            FileWriter fw = new FileWriter("tempos_JavaToXml.txt",true);
+            FileWriter fw = new FileWriter("tempos_JavaToXml.txt", true);
             fw.write(timeElapsed + "\n");
             //System.out.println(timeElapsed);
             byte[] bytes = allOwners.msgPackSerialize();
 
             allOwners = PetsOwnerList.msgPackDeserialize(bytes);
-            System.out.println(allOwners.toString());
+            //System.out.println(allOwners.toString());
             fw.close();
         } catch (IOException e) {
             System.err.printf("Erro na abertura do arquivo: %s.\n",
                     e.getMessage());
         } catch (JAXBException e) {
-            e.printStackTrace();
+//            //e.printStackTrace();
         }
     }
 }

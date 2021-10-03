@@ -1,6 +1,7 @@
 import jakarta.xml.bind.JAXBContext;
 import jakarta.xml.bind.JAXBException;
 import jakarta.xml.bind.Marshaller;
+import jakarta.xml.bind.Unmarshaller;
 import jakarta.xml.bind.annotation.*;
 import org.msgpack.MessagePack;
 import org.msgpack.annotation.Message;
@@ -11,10 +12,15 @@ import java.io.*;
 import java.time.LocalDate;
 import java.util.ArrayList;
 
+
+
 @XmlRootElement(name = "ListPeople")
 @XmlAccessorType(XmlAccessType.FIELD)
 @Message
 public class PetsOwnerList {
+    long start;
+    long finish;
+    long timeElapsed;
 
     @XmlElement(name = "owner")
     ArrayList<Owner> allOwners;
@@ -44,15 +50,15 @@ public class PetsOwnerList {
 
         // mar.marshal(this, System.out);
         // Medição de tempo em milisegundos
-        long start = System.currentTimeMillis();
+        start = System.currentTimeMillis();
         mar.marshal(this, new File("./owners.xml"));
-        long finish = System.currentTimeMillis();
-        long timeElapsed = finish - start;
+        finish = System.currentTimeMillis();
+        timeElapsed = finish - start;
 
         try {
             FileWriter fw = new FileWriter("tempos_JavaToXml.txt", true);
             fw.write(timeElapsed + "\n");
-            System.out.println(timeElapsed);
+            System.out.println("XML " + timeElapsed);
 
             fw.close();
         } catch (IOException e) {
@@ -60,6 +66,20 @@ public class PetsOwnerList {
         }
     }
 
+    public static PetsOwnerList unmarshal() {
+        JAXBContext jaxbContext = null;
+        File file = new File("owners.xml");
+        try {
+            jaxbContext = JAXBContext.newInstance(PetsOwnerList.class);
+            Unmarshaller jaxbUnmarshaller = jaxbContext.createUnmarshaller();
+            return (PetsOwnerList) jaxbUnmarshaller.unmarshal(file);
+            //System.out.println(allInfo);
+        } catch (JAXBException e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
+    
     public byte[] msgPackSerialize() {
         MessagePack msgpack = new MessagePack();
         msgpack.register(LocalDate.class, LocalDateSerializerTemplate.getInstance());
@@ -67,11 +87,14 @@ public class PetsOwnerList {
         ByteArrayOutputStream out = new ByteArrayOutputStream();
         Packer packer = msgpack.createPacker(out);
         try {
+            start = System.currentTimeMillis();
             packer.write(this);
+            finish = System.currentTimeMillis();
+            timeElapsed = finish - start;
+            System.out.println("msgPack " + timeElapsed);
         } catch (IOException e) {
             e.printStackTrace();
         }
-
         return out.toByteArray();
     }
 
