@@ -12,8 +12,6 @@ import java.io.*;
 import java.time.LocalDate;
 import java.util.ArrayList;
 
-
-
 @XmlRootElement(name = "ListPeople")
 @XmlAccessorType(XmlAccessType.FIELD)
 @Message
@@ -48,8 +46,6 @@ public class PetsOwnerList {
         Marshaller mar = context.createMarshaller();
         mar.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, Boolean.TRUE);
 
-        // mar.marshal(this, System.out);
-        // Medição de tempo em milisegundos
         start = System.currentTimeMillis();
         mar.marshal(this, new File("./owners.xml"));
         finish = System.currentTimeMillis();
