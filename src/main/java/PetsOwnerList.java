@@ -18,9 +18,9 @@ import java.util.ArrayList;
 @XmlAccessorType(XmlAccessType.FIELD)
 @Message
 public class PetsOwnerList {
-    long start;
-    long finish;
-    long timeElapsed;
+    static long start;
+    static long finish;
+    static long timeElapsed;
 
     @XmlElement(name = "owner")
     ArrayList<Owner> allOwners;
@@ -54,7 +54,6 @@ public class PetsOwnerList {
         mar.marshal(this, new File("./owners.xml"));
         finish = System.currentTimeMillis();
         timeElapsed = finish - start;
-
         try {
             FileWriter fw = new FileWriter("tempos_JavaToXml.txt", true);
             fw.write(timeElapsed + "\n");
@@ -71,8 +70,13 @@ public class PetsOwnerList {
         File file = new File("owners.xml");
         try {
             jaxbContext = JAXBContext.newInstance(PetsOwnerList.class);
+            start = System.currentTimeMillis();
             Unmarshaller jaxbUnmarshaller = jaxbContext.createUnmarshaller();
-            return (PetsOwnerList) jaxbUnmarshaller.unmarshal(file);
+            PetsOwnerList allInfo = (PetsOwnerList) jaxbUnmarshaller.unmarshal(file);
+            finish = System.currentTimeMillis();
+            timeElapsed = finish - start;
+            System.out.println("unmarshal " + timeElapsed);
+            return allInfo;
             //System.out.println(allInfo);
         } catch (JAXBException e) {
             e.printStackTrace();
@@ -91,7 +95,7 @@ public class PetsOwnerList {
             packer.write(this);
             finish = System.currentTimeMillis();
             timeElapsed = finish - start;
-            System.out.println("msgPack " + timeElapsed);
+            System.out.println("msgPack Serialize " + timeElapsed);
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -106,7 +110,11 @@ public class PetsOwnerList {
         Unpacker unpacker = msgpack.createUnpacker(in);
         PetsOwnerList dst1 = null;
         try {
+            start = System.currentTimeMillis();
             dst1 = unpacker.read(PetsOwnerList.class);
+            finish = System.currentTimeMillis();
+            timeElapsed = finish - start;
+            System.out.println("msgPack Deserialize " + timeElapsed);
         } catch (IOException e) {
             e.printStackTrace();
         }
