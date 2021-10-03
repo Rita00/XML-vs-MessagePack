@@ -38,8 +38,6 @@ public class PetsOwnerList {
     }
 
     public void marshal() throws JAXBException {
-
-        System.out.println(this);
         JAXBContext context = JAXBContext.newInstance(PetsOwnerList.class);
         Marshaller mar = context.createMarshaller();
         mar.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, Boolean.TRUE);
@@ -60,10 +58,9 @@ public class PetsOwnerList {
         } catch (IOException e) {
             e.printStackTrace();
         }
+    }
 
-
-        System.out.println(this);
-
+    public byte[] msgPackSerialize() {
         MessagePack msgpack = new MessagePack();
         msgpack.register(LocalDate.class, LocalDateSerializerTemplate.getInstance());
 
@@ -75,7 +72,12 @@ public class PetsOwnerList {
             e.printStackTrace();
         }
 
-        byte[] bytes = out.toByteArray();
+        return out.toByteArray();
+    }
+
+    public static PetsOwnerList msgPackDeserialize(byte[] bytes) {
+        MessagePack msgpack = new MessagePack();
+        msgpack.register(LocalDate.class, LocalDateSerializerTemplate.getInstance());
 
         ByteArrayInputStream in = new ByteArrayInputStream(bytes);
         Unpacker unpacker = msgpack.createUnpacker(in);
@@ -85,6 +87,6 @@ public class PetsOwnerList {
         } catch (IOException e) {
             e.printStackTrace();
         }
-        System.out.println(dst1);
+        return dst1;
     }
 }
