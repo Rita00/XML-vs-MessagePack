@@ -4,16 +4,9 @@ import java.io.*;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
-import java.util.Date;
 
 public class Project1 {
     public static void main(String[] args) throws IOException {
-        /*Calendar today = Calendar.getInstance();
-        Owner newowner = new Owner();
-        Pet newpet = new Pet(1, "ola", "s", "s", 21.0f, LocalDate.parse("2021-09-12"),"daf", newowner);
-        System.out.println(today.get(Calendar.YEAR));
-        System.out.println(newpet.getBirth());
-        System.out.println(LocalDate.now());*/
 
         try {
             FileReader arq = new FileReader("file.txt");
@@ -62,7 +55,10 @@ public class Project1 {
             FileWriter fw = new FileWriter("tempos_JavaToXml.txt",true);
             fw.write(timeElapsed + "\n");
             //System.out.println(timeElapsed);
+            byte[] bytes = allOwners.msgPackSerialize();
 
+            allOwners = PetsOwnerList.msgPackDeserialize(bytes);
+            System.out.println(allOwners.toString());
             fw.close();
         } catch (IOException e) {
             System.err.printf("Erro na abertura do arquivo: %s.\n",
