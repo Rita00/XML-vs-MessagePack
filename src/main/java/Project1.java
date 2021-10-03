@@ -42,22 +42,28 @@ public class Project1 {
                 ownersList.add(newOwner);
                 linha = lerArq.readLine();
             }
-            
+
             allOwners.setAllOwners(ownersList);
             arq.close();
-
-            long start = System.currentTimeMillis();
-            allOwners.marshal();
-            allOwners = PetsOwnerList.unmarshal();
-
-            long finish = System.currentTimeMillis();
-            long timeElapsed = finish - start;
-            FileWriter fw = new FileWriter("tempos_JavaToXml.txt", true);
-            fw.write(timeElapsed + "\n");
             
-            byte[] bytes = allOwners.msgPackSerialize();
-
-            allOwners = PetsOwnerList.msgPackDeserialize(bytes);
+            switch (args[0]) {
+                case "xml":
+                    for (int i = 0; i < 100; i++) {
+                        allOwners.marshal();
+                        allOwners = PetsOwnerList.unmarshal();
+                    }
+                    break;
+                case "msgPack":
+                    for (int i = 0; i < 100; i++) {
+                        byte[] bytes = allOwners.msgPackSerialize();
+                        allOwners = PetsOwnerList.msgPackDeserialize(bytes);
+                    }
+                    break;
+                default: 
+                    break;
+            }
+            
+            FileWriter fw = new FileWriter("tempos_JavaToXml.txt", true);
             //System.out.println(allOwners.toString());
             fw.close();
         } catch (IOException e) {

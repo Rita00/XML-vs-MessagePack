@@ -19,7 +19,8 @@ public class PetsOwnerList {
     static long start;
     static long finish;
     static long timeElapsed;
-
+    static FileWriter marshal, unmarshal, serialization, deserialization;
+    
     @XmlElement(name = "owner")
     ArrayList<Owner> allOwners;
 
@@ -51,11 +52,9 @@ public class PetsOwnerList {
         finish = System.currentTimeMillis();
         timeElapsed = finish - start;
         try {
-            FileWriter fw = new FileWriter("tempos_JavaToXml.txt", true);
-            fw.write(timeElapsed + "\n");
-            System.out.println("XML " + timeElapsed);
-
-            fw.close();
+            marshal = new FileWriter("marshal.txt", true);
+            marshal.write(timeElapsed + "\n");
+            marshal.close();
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -71,7 +70,13 @@ public class PetsOwnerList {
             PetsOwnerList allInfo = (PetsOwnerList) jaxbUnmarshaller.unmarshal(file);
             finish = System.currentTimeMillis();
             timeElapsed = finish - start;
-            System.out.println("unmarshal " + timeElapsed);
+            try {
+                unmarshal = new FileWriter("unmarshal.txt", true);
+                unmarshal.write(timeElapsed + "\n");
+                unmarshal.close();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
             return allInfo;
             //System.out.println(allInfo);
         } catch (JAXBException e) {
@@ -91,7 +96,9 @@ public class PetsOwnerList {
             packer.write(this);
             finish = System.currentTimeMillis();
             timeElapsed = finish - start;
-            System.out.println("msgPack Serialize " + timeElapsed);
+            serialization = new FileWriter("serialization.txt", true);
+            serialization.write(timeElapsed + "\n");
+            serialization.close();
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -110,7 +117,9 @@ public class PetsOwnerList {
             dst1 = unpacker.read(PetsOwnerList.class);
             finish = System.currentTimeMillis();
             timeElapsed = finish - start;
-            System.out.println("msgPack Deserialize " + timeElapsed);
+            deserialization = new FileWriter("deserialization.txt", true);
+            deserialization.write(timeElapsed + "\n");
+            deserialization.close();
         } catch (IOException e) {
             e.printStackTrace();
         }
