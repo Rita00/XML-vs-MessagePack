@@ -6,7 +6,7 @@ import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 
 public class Project1 {
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) {
 
         try {
             FileReader arq = new FileReader("file.txt");
@@ -18,8 +18,6 @@ public class Project1 {
             PetsOwnerList allOwners = new PetsOwnerList();
 
             while (linha != null) {
-                //System.out.printf("%s\n", linha);
-
                 ArrayList<Pet> petList = new ArrayList<>();
 
                 String[] owner_caract = linha.split("#");
@@ -44,6 +42,7 @@ public class Project1 {
                 ownersList.add(newOwner);
                 linha = lerArq.readLine();
             }
+            
             allOwners.setAllOwners(ownersList);
             arq.close();
 
@@ -55,7 +54,7 @@ public class Project1 {
             long timeElapsed = finish - start;
             FileWriter fw = new FileWriter("tempos_JavaToXml.txt", true);
             fw.write(timeElapsed + "\n");
-            //System.out.println(timeElapsed);
+            
             byte[] bytes = allOwners.msgPackSerialize();
 
             allOwners = PetsOwnerList.msgPackDeserialize(bytes);
