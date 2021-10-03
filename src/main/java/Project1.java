@@ -1,17 +1,10 @@
 import jakarta.xml.bind.JAXBException;
 
-import java.io.BufferedReader;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.IOException;
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
+import java.io.*;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
-import java.util.Calendar;
 import java.util.Date;
-import java.util.Scanner;
 
 public class Project1 {
     public static void main(String[] args) throws IOException {
@@ -40,9 +33,9 @@ public class Project1 {
 
                 String[] list_pets = owner_caract[5].split("\\?");
 
+
                 for (String line_pet : list_pets) {
                     String[] pet_caract = line_pet.split("\\+");
-
                     Pet newPet = new Pet(Integer.parseInt(pet_caract[0]), pet_caract[1], pet_caract[2], pet_caract[3],
                             Float.parseFloat(pet_caract[4]), LocalDate.parse(pet_caract[5], DateTimeFormatter.ofPattern("yyyy/MM/dd")), pet_caract[6]);
 
@@ -61,13 +54,16 @@ public class Project1 {
             allOwners.setAllOwners(ownersList);
             arq.close();
 
-            // Medição de tempo em milisegundos
             long start = System.currentTimeMillis();
             allOwners.marshal();
+
             long finish = System.currentTimeMillis();
             long timeElapsed = finish - start;
-            System.out.println(timeElapsed);
+            FileWriter fw = new FileWriter("tempos_JavaToXml.txt",true);
+            fw.write(timeElapsed + "\n");
+            //System.out.println(timeElapsed);
 
+            fw.close();
         } catch (IOException e) {
             System.err.printf("Erro na abertura do arquivo: %s.\n",
                     e.getMessage());

@@ -1,11 +1,12 @@
 import jakarta.xml.bind.annotation.*;
 import jakarta.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
+import org.msgpack.annotation.Message;
 
 import java.time.LocalDate;
 
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(propOrder = {"id", "name", "specie", "gender", "weight", "birth", "description"})
-
+@Message
 public class Pet {
     @XmlAttribute(name = "id")
     private int id;
@@ -27,6 +28,22 @@ public class Pet {
 
     @XmlElement(name = "description")
     private String description;
+
+    public Pet() {
+    }
+
+    @Override
+    public String toString() {
+        return "Pet{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", specie='" + specie + '\'' +
+                ", gender='" + gender + '\'' +
+                ", weight=" + weight +
+                ", birth=" + birth +
+                ", description='" + description + '\'' +
+                '}';
+    }
 
     public Pet(int id, String name, String specie, String gender, float weight, LocalDate birth, String description) {
         this.id = id;

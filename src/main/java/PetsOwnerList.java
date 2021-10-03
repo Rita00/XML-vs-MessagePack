@@ -1,21 +1,26 @@
 import jakarta.xml.bind.JAXBContext;
 import jakarta.xml.bind.JAXBException;
 import jakarta.xml.bind.Marshaller;
-import jakarta.xml.bind.annotation.XmlAccessType;
-import jakarta.xml.bind.annotation.XmlAccessorType;
-import jakarta.xml.bind.annotation.XmlElement;
-import jakarta.xml.bind.annotation.XmlRootElement;
+import jakarta.xml.bind.annotation.*;
+import org.msgpack.MessagePack;
+import org.msgpack.annotation.Message;
+import org.msgpack.packer.Packer;
+import org.msgpack.unpacker.Unpacker;
 
-import java.io.File;
+import java.io.*;
+import java.time.LocalDate;
 import java.util.ArrayList;
 
-@XmlRootElement(name="ListPeople")
+@XmlRootElement(name = "ListPeople")
 @XmlAccessorType(XmlAccessType.FIELD)
-
+@Message
 public class PetsOwnerList {
 
     @XmlElement(name = "owner")
     ArrayList<Owner> allOwners;
+
+    public PetsOwnerList() {
+    }
 
     public ArrayList<Owner> getAllOwners() {
         return allOwners;
@@ -25,12 +30,61 @@ public class PetsOwnerList {
         this.allOwners = allOwners;
     }
 
+    @Override
+    public String toString() {
+        return "PetsOwnerList{" +
+                "allOwners=" + getAllOwners().toString() +
+                '}';
+    }
+
     public void marshal() throws JAXBException {
+
+        System.out.println(this);
         JAXBContext context = JAXBContext.newInstance(PetsOwnerList.class);
-        Marshaller mar= context.createMarshaller();
+        Marshaller mar = context.createMarshaller();
         mar.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, Boolean.TRUE);
 
-       // mar.marshal(this, System.out);
+        // mar.marshal(this, System.out);
+        // Medição de tempo em milisegundos
+        long start = System.currentTimeMillis();
         mar.marshal(this, new File("./owners.xml"));
+        long finish = System.currentTimeMillis();
+        long timeElapsed = finish - start;
+
+        try {
+            FileWriter fw = new FileWriter("tempos_JavaToXml.txt", true);
+            fw.write(timeElapsed + "\n");
+            System.out.println(timeElapsed);
+
+            fw.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+
+        System.out.println(this);
+
+        MessagePack msgpack = new MessagePack();
+        msgpack.register(LocalDate.class, LocalDateSerializerTemplate.getInstance());
+
+        ByteArrayOutputStream out = new ByteArrayOutputStream();
+        Packer packer = msgpack.createPacker(out);
+        try {
+            packer.write(this);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        byte[] bytes = out.toByteArray();
+
+        ByteArrayInputStream in = new ByteArrayInputStream(bytes);
+        Unpacker unpacker = msgpack.createUnpacker(in);
+        PetsOwnerList dst1 = null;
+        try {
+            dst1 = unpacker.read(PetsOwnerList.class);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        System.out.println(dst1);
     }
 }
