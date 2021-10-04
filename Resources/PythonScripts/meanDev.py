@@ -12,6 +12,7 @@ def meanDev(in_file, out_file):
     mean = statistics.mean(all_times)
     std = statistics.stdev(all_times)
     f_out = open(out_file, 'a')
+    in_file = in_file.replace("TimeFiles/", '')
     f_out.write("%s\n" % in_file.replace('.txt', '').upper())
     f_out.write("mean: %.2f\n" % mean)
     f_out.write("std: %.2f\n" % std)
@@ -25,8 +26,12 @@ def meanDev(in_file, out_file):
 
 
 if __name__ == '__main__':
-    listFiles = ["marshal.txt"]
-    input_file = "marshal.txt"
-    output_file = "stats"
-    for i in listFiles:
-        meanDev(i, output_file)
+    for i in range(2, 11):
+        num_owners = i * 10000
+        listFiles = ["TimeFiles/marshal_" + str(num_owners) + ".txt", "TimeFiles/unmarshal_" + str(num_owners) + ".txt",
+                     "TimeFiles/deserialization_" + str(num_owners) + ".txt",
+                     "TimeFiles/serialization_" + str(num_owners) + ".txt"]
+
+        output_file = "Stats/stats_" + str(num_owners) + ".txt"
+        for i in listFiles:
+            meanDev(i, output_file)

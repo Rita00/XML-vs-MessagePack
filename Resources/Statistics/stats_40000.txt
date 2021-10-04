@@ -1,0 +1,20 @@
+MARSHAL_40000
+mean: 385.11
+std: 136.21
+std percentage: 35.37
+
+UNMARSHAL_40000
+mean: 983.68
+std: 49.06
+std percentage: 4.99
+
+DESERIALIZATION_40000
+mean: 201.30
+std: 22.57
+std percentage: 11.21
+
+SERIALIZATION_40000
+mean: 265.66
+std: 36.31
+std percentage: 13.67
+

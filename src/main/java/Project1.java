@@ -9,7 +9,7 @@ public class Project1 {
     public static void main(String[] args) {
 
         try {
-            FileReader arq = new FileReader("Resources/TestFiles/file3.txt");
+            FileReader arq = new FileReader("Resources/TestFiles/20000.txt");
             BufferedReader lerArq = new BufferedReader(arq);
 
             String linha = lerArq.readLine();
@@ -68,10 +68,7 @@ public class Project1 {
                 default: 
                     break;
             }
-            
-            FileWriter fw = new FileWriter("tempos_JavaToXml.txt", true);
-            //System.out.println(allOwners.toString());
-            fw.close();
+
         } catch (IOException e) {
             System.err.printf("Erro na abertura do arquivo: %s.\n",
                     e.getMessage());
