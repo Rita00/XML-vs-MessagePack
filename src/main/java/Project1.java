@@ -9,7 +9,7 @@ public class Project1 {
     public static void main(String[] args) {
 
         try {
-            FileReader arq = new FileReader("file.txt");
+            FileReader arq = new FileReader("Resources/TestFiles/file3.txt");
             BufferedReader lerArq = new BufferedReader(arq);
 
             String linha = lerArq.readLine();
@@ -55,6 +55,12 @@ public class Project1 {
                     break;
                 case "msgPack":
                     for (int i = 0; i < 100; i++) {
+//                        System.gc();
+//                        try {
+//                            Thread.sleep(5000);
+//                        } catch (InterruptedException e) {
+//                            e.printStackTrace();
+//                        }
                         byte[] bytes = allOwners.msgPackSerialize();
                         allOwners = PetsOwnerList.msgPackDeserialize(bytes);
                     }

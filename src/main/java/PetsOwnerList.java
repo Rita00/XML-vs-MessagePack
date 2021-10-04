@@ -52,7 +52,7 @@ public class PetsOwnerList {
         finish = System.currentTimeMillis();
         timeElapsed = finish - start;
         try {
-            marshal = new FileWriter("marshal.txt", true);
+            marshal = new FileWriter("./Resources/TimeFiles/marshal3.txt", true);
             marshal.write(timeElapsed + "\n");
             marshal.close();
         } catch (IOException e) {
@@ -71,7 +71,7 @@ public class PetsOwnerList {
             finish = System.currentTimeMillis();
             timeElapsed = finish - start;
             try {
-                unmarshal = new FileWriter("unmarshal.txt", true);
+                unmarshal = new FileWriter("./Resources/TimeFiles/unmarshal3.txt", true);
                 unmarshal.write(timeElapsed + "\n");
                 unmarshal.close();
             } catch (IOException e) {
@@ -96,7 +96,7 @@ public class PetsOwnerList {
             packer.write(this);
             finish = System.currentTimeMillis();
             timeElapsed = finish - start;
-            serialization = new FileWriter("serialization.txt", true);
+            serialization = new FileWriter("./Resources/TimeFiles/serialization3.txt", true);
             serialization.write(timeElapsed + "\n");
             serialization.close();
         } catch (IOException e) {
@@ -117,7 +117,7 @@ public class PetsOwnerList {
             dst1 = unpacker.read(PetsOwnerList.class);
             finish = System.currentTimeMillis();
             timeElapsed = finish - start;
-            deserialization = new FileWriter("deserialization.txt", true);
+            deserialization = new FileWriter("./Resources/TimeFiles/deserialization3.txt", true);
             deserialization.write(timeElapsed + "\n");
             deserialization.close();
         } catch (IOException e) {
