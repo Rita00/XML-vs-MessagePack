@@ -19,6 +19,7 @@ import java.util.ArrayList;
 @XmlAccessorType(XmlAccessType.FIELD)
 @Message
 public class PetsOwnerList {
+
     static long start;
     static long finish;
     static long timeElapsed;
@@ -55,7 +56,7 @@ public class PetsOwnerList {
         finish = System.currentTimeMillis();
         timeElapsed = finish - start;
         try {
-            marshal = new FileWriter("./Resources/TimeFiles/marshal_200000.txt", true);
+            marshal = new FileWriter("./Resources/TimeFiles/marshal_" + Project1.owners + ".txt", true);
             marshal.write(timeElapsed + "\n");
             marshal.close();
         } catch (IOException e) {
@@ -74,7 +75,7 @@ public class PetsOwnerList {
             finish = System.currentTimeMillis();
             timeElapsed = finish - start;
             try {
-                unmarshal = new FileWriter("./Resources/TimeFiles/unmarshal_200000.txt", true);
+                unmarshal = new FileWriter("./Resources/TimeFiles/unmarshal_" + Project1.owners + ".txt", true);
                 unmarshal.write(timeElapsed + "\n");
                 unmarshal.close();
             } catch (IOException e) {
@@ -104,7 +105,7 @@ public class PetsOwnerList {
 //            Files.write(path, out.toByteArray());
             finish = System.currentTimeMillis();
             timeElapsed = finish - start;
-            serialization = new FileWriter("./Resources/TimeFiles/serialization_example.txt", true);
+            serialization = new FileWriter("./Resources/TimeFiles/serialization_" + Project1.owners + ".txt", true);
             serialization.write(timeElapsed + "\n");
             serialization.close();
         } catch (IOException e) {
@@ -134,9 +135,8 @@ public class PetsOwnerList {
 
             finish = System.currentTimeMillis();
             timeElapsed = finish - start;
-            System.out.println(dst1);
             fis.close();
-            deserialization = new FileWriter("./Resources/TimeFiles/deserialization_example.txt", true);
+            deserialization = new FileWriter("./Resources/TimeFiles/deserialization_" + Project1.owners + ".txt", true);
             deserialization.write(timeElapsed + "\n");
             deserialization.close();
         } catch (IOException e) {

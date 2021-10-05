@@ -6,10 +6,11 @@ import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 
 public class Project1 {
+    static String owners = "200000";
     public static void main(String[] args) {
 
         try {
-            FileReader arq = new FileReader("Resources/TestFiles/10000.txt");
+            FileReader arq = new FileReader("Resources/TestFiles/" + owners + ".txt");
             BufferedReader lerArq = new BufferedReader(arq);
 
             String linha = lerArq.readLine();
