@@ -9,7 +9,7 @@ public class Project1 {
     public static void main(String[] args) {
 
         try {
-            FileReader arq = new FileReader("Resources/TestFiles/20000.txt");
+            FileReader arq = new FileReader("Resources/TestFiles/10000.txt");
             BufferedReader lerArq = new BufferedReader(arq);
 
             String linha = lerArq.readLine();

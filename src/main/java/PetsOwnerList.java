@@ -9,6 +9,9 @@ import org.msgpack.packer.Packer;
 import org.msgpack.unpacker.Unpacker;
 
 import java.io.*;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.time.LocalDate;
 import java.util.ArrayList;
 
@@ -52,7 +55,7 @@ public class PetsOwnerList {
         finish = System.currentTimeMillis();
         timeElapsed = finish - start;
         try {
-            marshal = new FileWriter("./Resources/TimeFiles/marshal_20000.txt", true);
+            marshal = new FileWriter("./Resources/TimeFiles/marshal_200000.txt", true);
             marshal.write(timeElapsed + "\n");
             marshal.close();
         } catch (IOException e) {
@@ -71,7 +74,7 @@ public class PetsOwnerList {
             finish = System.currentTimeMillis();
             timeElapsed = finish - start;
             try {
-                unmarshal = new FileWriter("./Resources/TimeFiles/unmarshal_20000.txt", true);
+                unmarshal = new FileWriter("./Resources/TimeFiles/unmarshal_200000.txt", true);
                 unmarshal.write(timeElapsed + "\n");
                 unmarshal.close();
             } catch (IOException e) {
@@ -92,11 +95,16 @@ public class PetsOwnerList {
         ByteArrayOutputStream out = new ByteArrayOutputStream();
         Packer packer = msgpack.createPacker(out);
         try {
+            FileOutputStream fos = new FileOutputStream("msgPack.txt");
             start = System.currentTimeMillis();
             packer.write(this);
+            fos.write(out.toByteArray(), 0, out.toByteArray().length);
+            fos.flush();
+            fos.close();
+//            Files.write(path, out.toByteArray());
             finish = System.currentTimeMillis();
             timeElapsed = finish - start;
-            serialization = new FileWriter("./Resources/TimeFiles/serialization_20000.txt", true);
+            serialization = new FileWriter("./Resources/TimeFiles/serialization_example.txt", true);
             serialization.write(timeElapsed + "\n");
             serialization.close();
         } catch (IOException e) {
@@ -109,15 +117,26 @@ public class PetsOwnerList {
         MessagePack msgpack = new MessagePack();
         msgpack.register(LocalDate.class, LocalDateSerializerTemplate.getInstance());
 
-        ByteArrayInputStream in = new ByteArrayInputStream(bytes);
-        Unpacker unpacker = msgpack.createUnpacker(in);
         PetsOwnerList dst1 = null;
+        byte[] data;
         try {
+            File inputFile = new File("msgPack.txt");
+            data = new byte[(int) inputFile.length()];
+            FileInputStream fis = new FileInputStream(inputFile);
+
             start = System.currentTimeMillis();
+
+            fis.read(data, 0, data.length);
+            ByteArrayInputStream in = new ByteArrayInputStream(data);
+            Unpacker unpacker = msgpack.createUnpacker(in);
+
             dst1 = unpacker.read(PetsOwnerList.class);
+
             finish = System.currentTimeMillis();
             timeElapsed = finish - start;
-            deserialization = new FileWriter("./Resources/TimeFiles/deserialization_20000.txt", true);
+            System.out.println(dst1);
+            fis.close();
+            deserialization = new FileWriter("./Resources/TimeFiles/deserialization_example.txt", true);
             deserialization.write(timeElapsed + "\n");
             deserialization.close();
         } catch (IOException e) {
